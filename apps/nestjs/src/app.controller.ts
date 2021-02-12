@@ -4,7 +4,10 @@ import { AppService } from './app.service';
 
 @Controller()
 export class AppController {
-    constructor(private readonly appService: AppService) {}
+    constructor(private readonly appService: AppService) {
+        const sum = appService.getSum(2, 2);
+        console.log(sum);
+    }
 
     @Get('/:name/:age')
     async getUser(@Param('name') name: string, @Param('age') age: number): Promise<User> {

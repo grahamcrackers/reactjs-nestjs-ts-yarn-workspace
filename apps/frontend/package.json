@@ -1,0 +1,11 @@
+{
+    "name": "@react-nestjs/frontend",
+    "version": "1.0.0",
+    "dependencies": {
+        "@react-nestjs/shared": "1.0.0",
+        "cross-env": "5.0.5"
+    },
+    "devDependencies": {
+        "typescript": "^4.1.5"
+    }
+}

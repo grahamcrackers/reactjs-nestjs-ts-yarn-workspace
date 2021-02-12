@@ -1,0 +1,41 @@
+{
+    "name": "@react-nestjs/tsdx",
+    "author": "Graham Rogers",
+    "version": "0.1.0",
+    "license": "MIT",
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts",
+    "module": "dist/tsdx.esm.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "engines": {
+        "node": ">=10"
+    },
+    "scripts": {
+        "start": "tsdx watch",
+        "build": "tsdx build",
+        "test": "tsdx test",
+        "lint": "tsdx lint",
+        "prepare": "tsdx build",
+        "size": "size-limit",
+        "analyze": "size-limit --why"
+    },
+    "peerDependencies": {},
+    "husky": {
+        "hooks": {
+            "pre-commit": "tsdx lint"
+        }
+    },
+    "size-limit": [
+        {
+            "path": "dist/tsdx.cjs.production.min.js",
+            "limit": "10 KB"
+        },
+        {
+            "path": "dist/tsdx.esm.js",
+            "limit": "10 KB"
+        }
+    ]
+}

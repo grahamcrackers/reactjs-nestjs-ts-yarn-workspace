@@ -12,7 +12,10 @@
     "scripts": {
         "backend": "yarn workspace @react-nestjs/backend",
         "frontend": "yarn workspace @react-nestjs/frontend",
-        "shared": "yarn workspace @react-nestjs/shared"
+        "shared": "yarn workspace @react-nestjs/shared",
+        "nestjs": "yarn workspace @react-nestjs/nestjs",
+        "react": "yarn workspace @react-nestjs/react",
+        "tsdx": "yarn workspace @react-nestjs/tsdx"
     },
     "devDependencies": {
         "@typescript-eslint/eslint-plugin": "^4.15.0",

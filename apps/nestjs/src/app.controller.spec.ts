@@ -15,8 +15,10 @@ describe('AppController', () => {
     });
 
     describe('root', () => {
-        it('should return "Hello World!"', () => {
-            expect(appController.getHello()).toBe('Hello World!');
+        it('should return a User object', async () => {
+            const user = await appController.getUser('Graham', 33);
+
+            expect(user).toMatchObject({ name: 'Graham', age: 33 });
         });
     });
 });

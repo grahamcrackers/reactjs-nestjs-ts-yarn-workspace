@@ -16,6 +16,6 @@
         "noImplicitAny": false,
         "downlevelIteration": true
     },
-    "include": ["src"],
+    "include": ["src", "__tests__"],
     "references": [{ "path": "../../libs/shared" }]
 }

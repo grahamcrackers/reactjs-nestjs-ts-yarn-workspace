@@ -13,5 +13,5 @@
         "incremental": true
     },
     "include": ["src"],
-    "references": [{ "path": "../../libs/shared" }, { "path": "../../libs/tsdx" }]
+    "references": [{ "path": "../../libs/shared" }]
 }
